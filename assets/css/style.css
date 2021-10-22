@@ -87,6 +87,38 @@ h1{
     width: 24px;
     height: 24px;
 }
+.menu-opened{
+    width: 200px !important;
+}
+aside {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:999;
+    display:flex;
+}
+
+#menu{
+    width: 0;
+    height:100vh;
+    background:#006341;
+    overflow-x:hidden;
+    overflow-y:auto;
+    transition: all ease .5s;
+}
+.menu-itens ul, .menu-itens li{
+    padding:0;
+    list-style:none;
+}
+.menu-itens li{
+    display:block;
+    padding:10px;
+    cursor:pointer;
+}
+.menu-itens li a{
+    text-decoration: none;
+    color: white;
+}
 
 .banner{
     background-image: url('../images/bg.jpg');
